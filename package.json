@@ -6,7 +6,7 @@
   "type": "module",
   "homepage": "https://github.com/ayadav-eightfold/boilerplate",
   "scripts": {
-    "start": "yarn && node --es-module-specifier-resolution=node --experimental-modules ./scripts/start.js",
+    "start": "npm ci && node --es-module-specifier-resolution=node --experimental-modules ./scripts/start.js",
     "build": "NODE_ENV='production' node --es-module-specifier-resolution=node --experimental-modules ./scripts/build.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
